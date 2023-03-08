@@ -88,16 +88,16 @@ export class ClassComponent extends React.Component {
         <form
           className={style.form}
           onSubmit={this.handleSubmit}>
-          <label className={style.label + ' ' + `${this.state.gameOver ? style.hidden : ''}`} htmlFor='user_number'>
+          <label className={`${style.label} ${this.state.gameOver ? style.hidden : ''}`} htmlFor='user_number'>
             Угадай число
           </label>
 
-          <input className={style.input + ' ' + `${this.state.gameOver ? style.hidden : ''}`} type='number' id='user_number'
+          <input className={`${style.input} ${this.state.gameOver ? style.hidden : ''}`} type='number' id='user_number'
             onChange={this.handleChange} value={this.state.userNumber}
           />
 
-          <button className={style.btn + ' ' + `${this.state.gameOver ? style.hidden : ''}`} onClick={this.handleClick}>Угадать</button>
-          <button className={style.btn + ' ' + `${this.state.btnPlayAgainIsVisible ? '' : style.hidden}`} onClick={this.playAgainClick}>Сыграть еще</button>
+          <button className={`${style.btn} ${this.state.gameOver ? style.hidden : ''}`} onClick={this.handleClick}>Угадать</button>
+          <button className={`${style.btn} ${this.state.btnPlayAgainIsVisible ? '' : style.hidden}`} onClick={this.playAgainClick}>Сыграть еще</button>
         </form>
       </div>
     );
