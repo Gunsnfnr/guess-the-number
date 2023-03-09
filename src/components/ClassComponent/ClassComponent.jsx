@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './ClassComponent.module.css';
 import PropTypes from 'prop-types';
-import {element} from 'prop-types';
+// import {element} from 'prop-types';
 
 export class ClassComponent extends React.Component {
   state = {
